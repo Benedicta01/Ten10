@@ -1,25 +1,27 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class main {
 
 public static void main(String[] args) {
 
-for(int i=1000000; i>1; i--){
+Scanner scn = new Scanner(System.in);
 
-System.out.println("Thev value of i is : " +i);
+System.out.print("Enter a number: ");
+
+int n = scn.nextInt();
+
+int sum = 0;
+
+for (int i = 1; i <= n; i++) {
+
+sum += i;
 
 }
 
+System.out.println("Sum till " + n + " is " + sum + ".");
+
+scn.close(); // Always good to close scanner
+
 }
-
-// @Test
-
-// void addition() {
-
-// assertEquals(2, 1 + 1);
-
-// }
 
 }
